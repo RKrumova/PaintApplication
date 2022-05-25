@@ -19,6 +19,7 @@ namespace Paint
         Pen pen = new Pen(Color.Black, 1);
         Pen erase = new Pen(Color.White, 10);
         int index;
+        int x, y, sX, sY, cX, cY;
         public PaintApplication()
         {
             InitializeComponent();
@@ -35,6 +36,8 @@ namespace Paint
         {
             paint = true;
             py = e.Location;
+            cX = e.X;
+            cY = e.Y;
 
         }
 
@@ -47,31 +50,78 @@ namespace Paint
                     px = e.Location;
                     graphics.DrawLine(pen, px, py);
                     py = px;
-                } else if (index == 2) { 
+                }
+                if (index == 2) { 
                     px = e.Location;
-                    graphics.DrawLine(pen, px, py);
+                    graphics.DrawLine(erase, px, py);
                     py = px;
                 }
             }
             pic.Refresh();
+            x = e.X;
+            y = e.Y;
+            sX = e.X - cX;
+            sY = e.Y - cY;
         }
-
         private void pic_MouseUp(object sender, MouseEventArgs e)
         {
             paint = false;
+            sX = x - cX;
+            sY = y - cY;
+            if (index == 3)
+            {
+                graphics.DrawEllipse(pen, cX, cY, sX, sY);
+            }
+            if(index == 4)
+            {
+                graphics.DrawRectangle(pen, cX, cY, sX, sY);
+            }
+            if(index == 5)
+            {
+                graphics.DrawLine(pen, cX, cY, x, y);
+            }
+        }
 
+        private void pic_Paint(object sender, PaintEventArgs e)
+        {
+            Graphics graphics = e.Graphics;
+            if (paint)
+            {
+                if (index == 3)
+                {
+                    graphics.DrawEllipse(pen, cX, cY, sX, sY);
+                }
+                if (index == 4)
+                {
+                    graphics.DrawRectangle(pen, cX, cY, sX, sY);
+                }
+                if (index == 5)
+                {
+                    graphics.DrawLine(pen, cX, cY, x, y);
+                }
+            }
         }
 
         private void pencilButton_Click(object sender, EventArgs e)
         {
             index = 1;
         }
-
         private void eraserButton_Click(object sender, EventArgs e)
         {
             index = 2;
         }
-
+        private void ellipseButton_Click(object sender, EventArgs e)
+        {
+            index = 3;
+        }
+        private void rectangleButton_Click(object sender, EventArgs e)
+        {
+            index = 4;
+        }
+        private void lineButton_Click(object sender, EventArgs e)
+        {
+            index = 5;
+        }
         private void PaintApplication_Load(object sender, EventArgs e)
         {
 
