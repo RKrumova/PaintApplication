@@ -30,6 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaintApplication));
             this.panelTop = new System.Windows.Forms.Panel();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.clearButton = new System.Windows.Forms.Button();
             this.colorPicker = new System.Windows.Forms.PictureBox();
             this.rectangleButton = new System.Windows.Forms.Button();
             this.lineButton = new System.Windows.Forms.Button();
@@ -49,6 +51,8 @@
             // panelTop
             // 
             this.panelTop.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
+            this.panelTop.Controls.Add(this.saveButton);
+            this.panelTop.Controls.Add(this.clearButton);
             this.panelTop.Controls.Add(this.colorPicker);
             this.panelTop.Controls.Add(this.rectangleButton);
             this.panelTop.Controls.Add(this.lineButton);
@@ -64,8 +68,39 @@
             this.panelTop.Size = new System.Drawing.Size(944, 100);
             this.panelTop.TabIndex = 0;
             // 
+            // saveButton
+            // 
+            this.saveButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
+            this.saveButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
+            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.saveButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
+            this.saveButton.Location = new System.Drawing.Point(807, 6);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(85, 42);
+            this.saveButton.TabIndex = 11;
+            this.saveButton.Text = "Save";
+            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
+            // 
+            // clearButton
+            // 
+            this.clearButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
+            this.clearButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
+            this.clearButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.clearButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.clearButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
+            this.clearButton.Location = new System.Drawing.Point(807, 51);
+            this.clearButton.Name = "clearButton";
+            this.clearButton.Size = new System.Drawing.Size(85, 42);
+            this.clearButton.TabIndex = 10;
+            this.clearButton.Text = "Clear";
+            this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            // 
             // colorPicker
             // 
+            this.colorPicker.Cursor = System.Windows.Forms.Cursors.Hand;
             this.colorPicker.Image = ((System.Drawing.Image)(resources.GetObject("colorPicker.Image")));
             this.colorPicker.Location = new System.Drawing.Point(12, 10);
             this.colorPicker.Name = "colorPicker";
@@ -73,9 +108,11 @@
             this.colorPicker.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.colorPicker.TabIndex = 9;
             this.colorPicker.TabStop = false;
+            this.colorPicker.MouseClick += new System.Windows.Forms.MouseEventHandler(this.colorPicker_MouseClick);
             // 
             // rectangleButton
             // 
+            this.rectangleButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.rectangleButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
             this.rectangleButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
             this.rectangleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -94,6 +131,7 @@
             // 
             // lineButton
             // 
+            this.lineButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lineButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
             this.lineButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
             this.lineButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -112,6 +150,7 @@
             // 
             // ellipseButton
             // 
+            this.ellipseButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ellipseButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
             this.ellipseButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
             this.ellipseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -130,6 +169,7 @@
             // 
             // eraserButton
             // 
+            this.eraserButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.eraserButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
             this.eraserButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
             this.eraserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -148,6 +188,7 @@
             // 
             // pencilButton
             // 
+            this.pencilButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pencilButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
             this.pencilButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
             this.pencilButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -166,6 +207,7 @@
             // 
             // fillButton
             // 
+            this.fillButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.fillButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
             this.fillButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
             this.fillButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -180,9 +222,11 @@
             this.fillButton.Text = "Fill";
             this.fillButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.fillButton.UseVisualStyleBackColor = true;
+            this.fillButton.Click += new System.EventHandler(this.fillButton_Click);
             // 
             // ColorButton
             // 
+            this.ColorButton.Cursor = System.Windows.Forms.Cursors.Hand;
             this.ColorButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
             this.ColorButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
             this.ColorButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -197,11 +241,12 @@
             this.ColorButton.Text = "Color";
             this.ColorButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.ColorButton.UseVisualStyleBackColor = true;
+            this.ColorButton.Click += new System.EventHandler(this.ColorButton_Click);
             // 
             // pic_color
             // 
             this.pic_color.BackColor = System.Drawing.Color.White;
-            this.pic_color.Location = new System.Drawing.Point(164, 51);
+            this.pic_color.Location = new System.Drawing.Point(164, 33);
             this.pic_color.Name = "pic_color";
             this.pic_color.Size = new System.Drawing.Size(55, 40);
             this.pic_color.TabIndex = 0;
@@ -226,6 +271,7 @@
             this.pic.TabIndex = 2;
             this.pic.TabStop = false;
             this.pic.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_Paint);
+            this.pic.MouseClick += new System.Windows.Forms.MouseEventHandler(this.pic_MouseClick);
             this.pic.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pic_MouseDown);
             this.pic.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pic_MouseMove);
             this.pic.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pic_MouseUp);
@@ -264,5 +310,7 @@
         private System.Windows.Forms.Button pencilButton;
         private System.Windows.Forms.Button fillButton;
         private System.Windows.Forms.PictureBox colorPicker;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Button clearButton;
     }
 }
