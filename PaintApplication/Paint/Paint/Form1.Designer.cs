@@ -61,7 +61,7 @@
             this.panelTop.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTop.Location = new System.Drawing.Point(0, 0);
             this.panelTop.Name = "panelTop";
-            this.panelTop.Size = new System.Drawing.Size(784, 100);
+            this.panelTop.Size = new System.Drawing.Size(944, 100);
             this.panelTop.TabIndex = 0;
             // 
             // colorPicker
@@ -83,13 +83,14 @@
             this.rectangleButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
             this.rectangleButton.Image = ((System.Drawing.Image)(resources.GetObject("rectangleButton.Image")));
             this.rectangleButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rectangleButton.Location = new System.Drawing.Point(616, 6);
+            this.rectangleButton.Location = new System.Drawing.Point(636, 4);
             this.rectangleButton.Name = "rectangleButton";
             this.rectangleButton.Size = new System.Drawing.Size(76, 87);
             this.rectangleButton.TabIndex = 8;
             this.rectangleButton.Text = "Rectangle";
             this.rectangleButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.rectangleButton.UseVisualStyleBackColor = true;
+            this.rectangleButton.Click += new System.EventHandler(this.rectangleButton_Click);
             // 
             // lineButton
             // 
@@ -100,13 +101,14 @@
             this.lineButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
             this.lineButton.Image = ((System.Drawing.Image)(resources.GetObject("lineButton.Image")));
             this.lineButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lineButton.Location = new System.Drawing.Point(698, 8);
+            this.lineButton.Location = new System.Drawing.Point(718, 6);
             this.lineButton.Name = "lineButton";
             this.lineButton.Size = new System.Drawing.Size(76, 87);
             this.lineButton.TabIndex = 7;
             this.lineButton.Text = "Line";
             this.lineButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.lineButton.UseVisualStyleBackColor = true;
+            this.lineButton.Click += new System.EventHandler(this.lineButton_Click);
             // 
             // ellipseButton
             // 
@@ -117,13 +119,14 @@
             this.ellipseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
             this.ellipseButton.Image = ((System.Drawing.Image)(resources.GetObject("ellipseButton.Image")));
             this.ellipseButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ellipseButton.Location = new System.Drawing.Point(534, 6);
+            this.ellipseButton.Location = new System.Drawing.Point(554, 4);
             this.ellipseButton.Name = "ellipseButton";
             this.ellipseButton.Size = new System.Drawing.Size(76, 87);
             this.ellipseButton.TabIndex = 5;
             this.ellipseButton.Text = "Ellipse";
             this.ellipseButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.ellipseButton.UseVisualStyleBackColor = true;
+            this.ellipseButton.Click += new System.EventHandler(this.ellipseButton_Click);
             // 
             // eraserButton
             // 
@@ -134,7 +137,7 @@
             this.eraserButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
             this.eraserButton.Image = ((System.Drawing.Image)(resources.GetObject("eraserButton.Image")));
             this.eraserButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.eraserButton.Location = new System.Drawing.Point(452, 8);
+            this.eraserButton.Location = new System.Drawing.Point(472, 6);
             this.eraserButton.Name = "eraserButton";
             this.eraserButton.Size = new System.Drawing.Size(76, 87);
             this.eraserButton.TabIndex = 4;
@@ -152,7 +155,7 @@
             this.pencilButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
             this.pencilButton.Image = ((System.Drawing.Image)(resources.GetObject("pencilButton.Image")));
             this.pencilButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.pencilButton.Location = new System.Drawing.Point(369, 10);
+            this.pencilButton.Location = new System.Drawing.Point(389, 8);
             this.pencilButton.Name = "pencilButton";
             this.pencilButton.Size = new System.Drawing.Size(76, 87);
             this.pencilButton.TabIndex = 3;
@@ -170,7 +173,7 @@
             this.fillButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
             this.fillButton.Image = ((System.Drawing.Image)(resources.GetObject("fillButton.Image")));
             this.fillButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.fillButton.Location = new System.Drawing.Point(287, 10);
+            this.fillButton.Location = new System.Drawing.Point(307, 8);
             this.fillButton.Name = "fillButton";
             this.fillButton.Size = new System.Drawing.Size(76, 87);
             this.fillButton.TabIndex = 2;
@@ -187,7 +190,7 @@
             this.ColorButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
             this.ColorButton.Image = ((System.Drawing.Image)(resources.GetObject("ColorButton.Image")));
             this.ColorButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ColorButton.Location = new System.Drawing.Point(205, 10);
+            this.ColorButton.Location = new System.Drawing.Point(225, 8);
             this.ColorButton.Name = "ColorButton";
             this.ColorButton.Size = new System.Drawing.Size(76, 87);
             this.ColorButton.TabIndex = 1;
@@ -200,7 +203,7 @@
             this.pic_color.BackColor = System.Drawing.Color.White;
             this.pic_color.Location = new System.Drawing.Point(164, 51);
             this.pic_color.Name = "pic_color";
-            this.pic_color.Size = new System.Drawing.Size(35, 32);
+            this.pic_color.Size = new System.Drawing.Size(55, 40);
             this.pic_color.TabIndex = 0;
             this.pic_color.UseVisualStyleBackColor = false;
             // 
@@ -208,9 +211,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 407);
+            this.panel1.Location = new System.Drawing.Point(0, 457);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(784, 54);
+            this.panel1.Size = new System.Drawing.Size(944, 54);
             this.panel1.TabIndex = 1;
             // 
             // pic
@@ -219,9 +222,10 @@
             this.pic.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pic.Location = new System.Drawing.Point(0, 0);
             this.pic.Name = "pic";
-            this.pic.Size = new System.Drawing.Size(784, 461);
+            this.pic.Size = new System.Drawing.Size(944, 511);
             this.pic.TabIndex = 2;
             this.pic.TabStop = false;
+            this.pic.Paint += new System.Windows.Forms.PaintEventHandler(this.pic_Paint);
             this.pic.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pic_MouseDown);
             this.pic.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pic_MouseMove);
             this.pic.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pic_MouseUp);
@@ -230,7 +234,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 461);
+            this.ClientSize = new System.Drawing.Size(944, 511);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panelTop);
             this.Controls.Add(this.pic);
