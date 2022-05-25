@@ -30,20 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PaintApplication));
             this.panelTop = new System.Windows.Forms.Panel();
+            this.colorPicker = new System.Windows.Forms.PictureBox();
+            this.rectangleButton = new System.Windows.Forms.Button();
+            this.lineButton = new System.Windows.Forms.Button();
+            this.ellipseButton = new System.Windows.Forms.Button();
+            this.eraserButton = new System.Windows.Forms.Button();
+            this.pencilButton = new System.Windows.Forms.Button();
+            this.fillButton = new System.Windows.Forms.Button();
             this.ColorButton = new System.Windows.Forms.Button();
             this.pic_color = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pic = new System.Windows.Forms.PictureBox();
-            this.fillButton = new System.Windows.Forms.Button();
-            this.pencilButton = new System.Windows.Forms.Button();
-            this.eraserButton = new System.Windows.Forms.Button();
-            this.ellipseButton = new System.Windows.Forms.Button();
-            this.lineButton = new System.Windows.Forms.Button();
-            this.rectangleButton = new System.Windows.Forms.Button();
-            this.colorPicker = new System.Windows.Forms.PictureBox();
             this.panelTop.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.colorPicker)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic)).BeginInit();
             this.SuspendLayout();
             // 
             // panelTop
@@ -63,6 +63,120 @@
             this.panelTop.Name = "panelTop";
             this.panelTop.Size = new System.Drawing.Size(784, 100);
             this.panelTop.TabIndex = 0;
+            // 
+            // colorPicker
+            // 
+            this.colorPicker.Image = ((System.Drawing.Image)(resources.GetObject("colorPicker.Image")));
+            this.colorPicker.Location = new System.Drawing.Point(12, 10);
+            this.colorPicker.Name = "colorPicker";
+            this.colorPicker.Size = new System.Drawing.Size(146, 83);
+            this.colorPicker.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.colorPicker.TabIndex = 9;
+            this.colorPicker.TabStop = false;
+            // 
+            // rectangleButton
+            // 
+            this.rectangleButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
+            this.rectangleButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
+            this.rectangleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.rectangleButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.rectangleButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
+            this.rectangleButton.Image = ((System.Drawing.Image)(resources.GetObject("rectangleButton.Image")));
+            this.rectangleButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.rectangleButton.Location = new System.Drawing.Point(616, 6);
+            this.rectangleButton.Name = "rectangleButton";
+            this.rectangleButton.Size = new System.Drawing.Size(76, 87);
+            this.rectangleButton.TabIndex = 8;
+            this.rectangleButton.Text = "Rectangle";
+            this.rectangleButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.rectangleButton.UseVisualStyleBackColor = true;
+            // 
+            // lineButton
+            // 
+            this.lineButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
+            this.lineButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
+            this.lineButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lineButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lineButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
+            this.lineButton.Image = ((System.Drawing.Image)(resources.GetObject("lineButton.Image")));
+            this.lineButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lineButton.Location = new System.Drawing.Point(698, 8);
+            this.lineButton.Name = "lineButton";
+            this.lineButton.Size = new System.Drawing.Size(76, 87);
+            this.lineButton.TabIndex = 7;
+            this.lineButton.Text = "Line";
+            this.lineButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.lineButton.UseVisualStyleBackColor = true;
+            // 
+            // ellipseButton
+            // 
+            this.ellipseButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
+            this.ellipseButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
+            this.ellipseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ellipseButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ellipseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
+            this.ellipseButton.Image = ((System.Drawing.Image)(resources.GetObject("ellipseButton.Image")));
+            this.ellipseButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ellipseButton.Location = new System.Drawing.Point(534, 6);
+            this.ellipseButton.Name = "ellipseButton";
+            this.ellipseButton.Size = new System.Drawing.Size(76, 87);
+            this.ellipseButton.TabIndex = 5;
+            this.ellipseButton.Text = "Ellipse";
+            this.ellipseButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.ellipseButton.UseVisualStyleBackColor = true;
+            // 
+            // eraserButton
+            // 
+            this.eraserButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
+            this.eraserButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
+            this.eraserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.eraserButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.eraserButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
+            this.eraserButton.Image = ((System.Drawing.Image)(resources.GetObject("eraserButton.Image")));
+            this.eraserButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.eraserButton.Location = new System.Drawing.Point(452, 8);
+            this.eraserButton.Name = "eraserButton";
+            this.eraserButton.Size = new System.Drawing.Size(76, 87);
+            this.eraserButton.TabIndex = 4;
+            this.eraserButton.Text = "Eraser";
+            this.eraserButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.eraserButton.UseVisualStyleBackColor = true;
+            this.eraserButton.Click += new System.EventHandler(this.eraserButton_Click);
+            // 
+            // pencilButton
+            // 
+            this.pencilButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
+            this.pencilButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
+            this.pencilButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pencilButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.pencilButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
+            this.pencilButton.Image = ((System.Drawing.Image)(resources.GetObject("pencilButton.Image")));
+            this.pencilButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.pencilButton.Location = new System.Drawing.Point(369, 10);
+            this.pencilButton.Name = "pencilButton";
+            this.pencilButton.Size = new System.Drawing.Size(76, 87);
+            this.pencilButton.TabIndex = 3;
+            this.pencilButton.Text = "Pencil";
+            this.pencilButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.pencilButton.UseVisualStyleBackColor = true;
+            this.pencilButton.Click += new System.EventHandler(this.pencilButton_Click);
+            // 
+            // fillButton
+            // 
+            this.fillButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
+            this.fillButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
+            this.fillButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.fillButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.fillButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
+            this.fillButton.Image = ((System.Drawing.Image)(resources.GetObject("fillButton.Image")));
+            this.fillButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.fillButton.Location = new System.Drawing.Point(287, 10);
+            this.fillButton.Name = "fillButton";
+            this.fillButton.Size = new System.Drawing.Size(76, 87);
+            this.fillButton.TabIndex = 2;
+            this.fillButton.Text = "Fill";
+            this.fillButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.fillButton.UseVisualStyleBackColor = true;
             // 
             // ColorButton
             // 
@@ -108,119 +222,9 @@
             this.pic.Size = new System.Drawing.Size(784, 461);
             this.pic.TabIndex = 2;
             this.pic.TabStop = false;
-            // 
-            // fillButton
-            // 
-            this.fillButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
-            this.fillButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
-            this.fillButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.fillButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.fillButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
-            this.fillButton.Image = ((System.Drawing.Image)(resources.GetObject("fillButton.Image")));
-            this.fillButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.fillButton.Location = new System.Drawing.Point(287, 10);
-            this.fillButton.Name = "fillButton";
-            this.fillButton.Size = new System.Drawing.Size(76, 87);
-            this.fillButton.TabIndex = 2;
-            this.fillButton.Text = "Fill";
-            this.fillButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.fillButton.UseVisualStyleBackColor = true;
-            // 
-            // pencilButton
-            // 
-            this.pencilButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
-            this.pencilButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
-            this.pencilButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.pencilButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.pencilButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
-            this.pencilButton.Image = ((System.Drawing.Image)(resources.GetObject("pencilButton.Image")));
-            this.pencilButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.pencilButton.Location = new System.Drawing.Point(369, 10);
-            this.pencilButton.Name = "pencilButton";
-            this.pencilButton.Size = new System.Drawing.Size(76, 87);
-            this.pencilButton.TabIndex = 3;
-            this.pencilButton.Text = "Pencil";
-            this.pencilButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.pencilButton.UseVisualStyleBackColor = true;
-            // 
-            // eraserButton
-            // 
-            this.eraserButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
-            this.eraserButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
-            this.eraserButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.eraserButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.eraserButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
-            this.eraserButton.Image = ((System.Drawing.Image)(resources.GetObject("eraserButton.Image")));
-            this.eraserButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.eraserButton.Location = new System.Drawing.Point(452, 8);
-            this.eraserButton.Name = "eraserButton";
-            this.eraserButton.Size = new System.Drawing.Size(76, 87);
-            this.eraserButton.TabIndex = 4;
-            this.eraserButton.Text = "Eraser";
-            this.eraserButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.eraserButton.UseVisualStyleBackColor = true;
-            // 
-            // ellipseButton
-            // 
-            this.ellipseButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
-            this.ellipseButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
-            this.ellipseButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ellipseButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ellipseButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
-            this.ellipseButton.Image = ((System.Drawing.Image)(resources.GetObject("ellipseButton.Image")));
-            this.ellipseButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ellipseButton.Location = new System.Drawing.Point(534, 6);
-            this.ellipseButton.Name = "ellipseButton";
-            this.ellipseButton.Size = new System.Drawing.Size(76, 87);
-            this.ellipseButton.TabIndex = 5;
-            this.ellipseButton.Text = "Ellipse";
-            this.ellipseButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.ellipseButton.UseVisualStyleBackColor = true;
-            // 
-            // lineButton
-            // 
-            this.lineButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
-            this.lineButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
-            this.lineButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lineButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lineButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
-            this.lineButton.Image = ((System.Drawing.Image)(resources.GetObject("lineButton.Image")));
-            this.lineButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lineButton.Location = new System.Drawing.Point(698, 8);
-            this.lineButton.Name = "lineButton";
-            this.lineButton.Size = new System.Drawing.Size(76, 87);
-            this.lineButton.TabIndex = 7;
-            this.lineButton.Text = "Line";
-            this.lineButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.lineButton.UseVisualStyleBackColor = true;
-            // 
-            // rectangleButton
-            // 
-            this.rectangleButton.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(202)))), ((int)(((byte)(236)))));
-            this.rectangleButton.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
-            this.rectangleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.rectangleButton.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.rectangleButton.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(147)))), ((int)(((byte)(213)))));
-            this.rectangleButton.Image = ((System.Drawing.Image)(resources.GetObject("rectangleButton.Image")));
-            this.rectangleButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.rectangleButton.Location = new System.Drawing.Point(616, 6);
-            this.rectangleButton.Name = "rectangleButton";
-            this.rectangleButton.Size = new System.Drawing.Size(76, 87);
-            this.rectangleButton.TabIndex = 8;
-            this.rectangleButton.Text = "Rectangle";
-            this.rectangleButton.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.rectangleButton.UseVisualStyleBackColor = true;
-            this.rectangleButton.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // colorPicker
-            // 
-            this.colorPicker.Image = ((System.Drawing.Image)(resources.GetObject("colorPicker.Image")));
-            this.colorPicker.Location = new System.Drawing.Point(12, 10);
-            this.colorPicker.Name = "colorPicker";
-            this.colorPicker.Size = new System.Drawing.Size(146, 83);
-            this.colorPicker.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.colorPicker.TabIndex = 9;
-            this.colorPicker.TabStop = false;
+            this.pic.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pic_MouseDown);
+            this.pic.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pic_MouseMove);
+            this.pic.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pic_MouseUp);
             // 
             // PaintApplication
             // 
@@ -234,9 +238,10 @@
             this.Name = "PaintApplication";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Paint Application";
+            this.Load += new System.EventHandler(this.PaintApplication_Load);
             this.panelTop.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.colorPicker)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic)).EndInit();
             this.ResumeLayout(false);
 
         }
