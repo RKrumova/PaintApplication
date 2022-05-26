@@ -149,7 +149,7 @@ namespace Paint
 
         private void pic_MouseClick(object sender, MouseEventArgs e)
         {
-            if (index == 7)
+            if (index == 6)
             {
                 Point point = setPoints(pic, e.Location);
                 Fill(bm, point.X, point.Y, newColor);
@@ -195,7 +195,7 @@ namespace Paint
         }
         private void fillButton_Click(object sender, EventArgs e)
         {
-            index = 7;
+            index = 6;
         }
         
         private void PaintApplication_Load(object sender, EventArgs e)
